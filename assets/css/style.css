@@ -43,6 +43,15 @@
   border-radius: 5px;
   color: #c488b7;
 }
+.boton_footer{
+  background: #e9b1dd;
+  border: none;
+  width: 80px;
+  height: 40px;
+
+  border-radius: 5px;
+  color: #35001f ;
+}
 
 .imagenProducto {
   width: 230px;
