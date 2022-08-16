@@ -125,3 +125,26 @@
 .divFooter2{
   width: 90%;
 }
+.contenedosPrincipalPagos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorDivPagos{
+ width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.DivDatos{
+  display: flex;
+  flex-direction: column;
+
+}
+.input{
+  margin-top: 25px;
+  width: 300px;
+  height: 50px;
+}
