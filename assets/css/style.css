@@ -147,4 +147,26 @@
   margin-top: 25px;
   width: 300px;
   height: 50px;
+  border-radius: 10px;
+  border: solid #d3aac8;
+
+}
+
+.tituloDatos{
+  color:#ac689d;
+  font-size: 25px;
+}
+.divBoton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.botonFinalizarCompra{
+  background: #491734;
+  border: none;
+  width: 180px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #dcc1d5;
 }

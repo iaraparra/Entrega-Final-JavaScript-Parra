@@ -3,19 +3,35 @@ function compraExitosa() {
     position: 'center',
     icon: 'success',
     title: 'Compra Exitosa',
-    showConfirmButton: false,
+    text: 'Pronto te enviaremos los datos por mail',
+    showConfirmButton: true,
     timer: 1500
   })
 }
 
-function Pago() {
-  let contenedorPrincipal = document.createElement ("div");
+/* function borrar(idABorrar) {
+  let child;
+  let container = document.getElementById(idABorrar);
+  while ((child = container.firstChild)) {
+    container.removeChild(child);
+  }
+}
+function borrar(elemento) {
+  removeItem(elemento);
+} */
+
+function Pago(e) {
+
+  let contenedorPrincipal = document.createElement("div");
   contenedorPrincipal.className = "contenedosPrincipalPagos";
   let contenedor = document.createElement("div");
   contenedor.className = "contenedorDivPagos";
 
   let DatosPersonales = document.createElement("div");
   DatosPersonales.className = "DivDatos";
+  let datosPersTitulo = document.createElement("p");
+  datosPersTitulo.className = "tituloDatos";
+  datosPersTitulo.textContent = "Datos Personales";
   let nombre = document.createElement("input");
   nombre.className = "input";
   nombre.placeholder = "Ingrese su Nombre ";
@@ -31,8 +47,8 @@ function Pago() {
 
   let DatosTarjeta = document.createElement("div");
   DatosTarjeta.className = "DivDatos";
-  let datosTarjTitulo = document.createElement ("p");
-  datosTarjTitulo.className ="tituloDatos";
+  let datosTarjTitulo = document.createElement("p");
+  datosTarjTitulo.className = "tituloDatos";
   datosTarjTitulo.textContent = "Datos Tarjeta";
   let nTarjeta = document.createElement("input");
   nTarjeta.className = "input";
@@ -44,6 +60,36 @@ function Pago() {
   fechaVencimiento.className = "input";
   fechaVencimiento.placeholder = "Ingrese Fecha Vencimiento ";
 
+  let divBoton = document.createElement("div");
+  divBoton.className = "divBoton";
+  let botonFinalizar = document.createElement("button")
+  botonFinalizar.className = "botonFinalizarCompra";
+  botonFinalizar.textContent = "Finalizar Compra"
+
+  /* botonFinalizar.onclick = function (){
+    compraExitosa(vaciarCarrito()).onclick = function (){
+      let aIndex = document.createElement("a");
+      aIndex.href = "index.html";
+
+      botonFinalizar.appendChild(aIndex);
+    };
+    
+  } */
+
+  botonFinalizar.onclick = function () {
+    let aIndex = document.createElement("a");
+    aIndex.href = "index.html";
+
+    botonFinalizar.appendChild(aIndex);
+    compraExitosa(vaciarCarrito());
+  }
+
+
+
+
+  divBoton.appendChild(botonFinalizar);
+
+  DatosPersonales.appendChild(datosPersTitulo);
   DatosPersonales.appendChild(nombre);
   DatosPersonales.appendChild(mail);
   DatosPersonales.appendChild(direccion);
@@ -54,6 +100,7 @@ function Pago() {
   DatosTarjeta.appendChild(fechaVencimiento);
   contenedor.appendChild(DatosPersonales);
   contenedor.appendChild(DatosTarjeta);
+  contenedor.appendChild(divBoton);
   contenedorPrincipal.appendChild(contenedor);
   document.getElementById("pagos").appendChild(contenedorPrincipal);
 }
@@ -85,7 +132,7 @@ function renderProductosCarrito() {
           <td class="align-middle justify-center"><b>${producto.cantidad}</b></td>
           <td class="align-middle justifycontent-center">$${producto.precio}</td>
           <td class="align-middle justify-center"><b>$${valor}</b></td>
-          <td class="align-end text-end"><a href="#" class="btn btn button" onclick="eliminarCarrito(${producto.id})" ><img src="assets/imagenes/delete.png" width="24"></a> </td>
+          <td class="align-end text-end"><a href="#" class="btn btn button" addEventListener="eliminarCarrito(${producto.id})" ><img src="assets/imagenes/delete.png" width="24"></a> </td>
           </tr>`;
       total += valor;
 
@@ -103,11 +150,10 @@ function renderProductosCarrito() {
     contenido += `</table>`;
   }
 
-  // onclick="compraExitosa(vaciarCarrito())
+
 
   document.getElementById("productos_carrito").innerHTML = contenido;
 }
 
 actualizarBotonCarrito();
 renderProductosCarrito();
-
