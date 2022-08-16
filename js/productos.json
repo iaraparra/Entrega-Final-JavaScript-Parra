@@ -1,0 +1,167 @@
+[{
+        "id": 1,
+        "categoria": 1,
+        "nombre": "Combo Unicornio",
+        "precio": 9999,
+        "imageURL": "combo.jpeg",
+        "cantidad": 8
+    },
+    {
+        "id": 2,
+        "categoria": 1,
+        "nombre": "Combo Paw Patrol 1",
+        "precio": 4998,
+        "imageURL": "comboPawpa.jpeg",
+        "cantidad": 4
+    },
+    {
+        "id": 3,
+        "categoria": 1,
+        "nombre": "Combo Stitch",
+        "precio": 4198,
+        "imageURL": "comboStitch.jpeg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "categoria": 1,
+        "nombre": "Combo Paw Patrol 2",
+        "precio": 6898,
+        "imageURL": "comboPawpa2.jpeg",
+        "cantidad": 3
+    },
+
+
+    {
+        "id": 5,
+        "categoria": 2,
+        "nombre": "Lampara Gato",
+        "precio": 2798,
+        "imageURL": "lamparaGato.jpeg",
+        "cantidad": 8
+    },
+    {
+        "id": 6,
+        "categoria": 2,
+        "nombre": "Lampara astronauta sentado",
+        "precio": 3498,
+        "imageURL": "lampara astronauta.jpeg",
+        "cantidad": 4
+    },
+    {
+        "id": 7,
+        "categoria": 2,
+        "nombre": "Lampara astronauta",
+        "precio": 3998,
+        "imageURL": "lampara astronauta2.jpeg",
+        "cantidad": 2
+    },
+    {
+        "id": 8,
+        "categoria": 2,
+        "nombre": "Lampara astronauta en la luna",
+        "precio": 5298,
+        "imageURL": "lamparaLuna.jpeg",
+        "cantidad": 3
+    },
+
+
+    {
+        "id": 9,
+        "categoria": 3,
+        "nombre": "Botella Paw Patrol",
+        "precio": 3998,
+        "imageURL": "botPawpa.jpeg",
+        "cantidad": 4
+    },
+    {
+        "id": 10,
+        "categoria": 3,
+        "nombre": "Botella Unicornio",
+        "precio": 3198,
+        "imageURL": "bot uni.jpeg",
+        "cantidad": 1
+    },
+    {
+        "id": 11,
+        "categoria": 3,
+        "nombre": "Botella pico silicona",
+        "precio": 4898,
+        "imageURL": "botella.jpeg",
+        "cantidad": 3
+    },
+    {
+        "id": 12,
+        "categoria": 3,
+        "nombre": "Vaso Unicornio",
+        "precio": 5298,
+        "imageURL": "vaso uni.jpeg",
+        "cantidad": 3
+    },
+
+
+    {
+        "id": 13,
+        "categoria": 4,
+        "nombre": "Cartuchera pop it",
+        "precio": 4198,
+        "imageURL": "cartu pop it.jpeg",
+        "cantidad": 4
+    },
+    {
+        "id": 14,
+        "categoria": 4,
+        "nombre": "Maquillaje Unicornio",
+        "precio": 6898,
+        "imageURL": "maquillaje.jpeg",
+        "cantidad": 3
+    },
+    {
+        "id": 15,
+        "categoria": 4,
+        "nombre": "Taza con tapa arcoiris",
+        "precio": 5298,
+        "imageURL": "tazaArcoiris.jpeg",
+        "cantidad": 1
+    },
+    {
+        "id": 16,
+        "categoria": 4,
+        "nombre": "Taza + individual Palta",
+        "precio": 4198,
+        "imageURL": "comboPalta.jpeg",
+        "cantidad": 1
+    },
+    {
+        "id": 17,
+        "categoria": 4,
+        "nombre": "Cartera Chimola",
+        "precio": 4998,
+        "imageURL": "cartera-producto.jpeg",
+        "cantidad": 4
+    },
+    {
+        "id": 18,
+        "categoria": 4,
+        "nombre": "Mochila Chimola",
+        "precio": 6198,
+        "imageURL": "mochilaChimola.jpeg",
+        "cantidad": 1
+    },
+    {
+        "id": 19,
+        "categoria": 4,
+        "nombre": "Cartera Trendy",
+        "precio": 6898,
+        "imageURL": "cartera-trendy.jpeg",
+        "cantidad": 3
+    },
+    {
+        "id": 20,
+        "categoria": 4,
+        "nombre": "Mochila Chimola",
+        "precio": 6198,
+        "imageURL": "mochilaChimo.jpeg",
+        "cantidad": 1
+    }
+]

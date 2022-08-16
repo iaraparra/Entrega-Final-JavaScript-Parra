@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  color: #70164b;
+}
+
+.tituloContacto {
+  padding: 10px;
+}
+
+.contenedorFormulario {
+  padding: 10px;
+}
+
+.form-control__texrarea {
+  width: 100%;
+  height: 180px;
+}
+
+#productos{
+  margin-top: 50px;
+}
+.botonFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.boton {
+  background: #35001f;
+  border: none;
+  width: 110px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #c488b7;
+}
+
+.imagenProducto {
+  width: 230px;
+  border-radius: 7px;
+}
+
+.card-header {
+  text-align: center;
+  background-color: #dcc1d5;
+}
+
+.botonAgregar {
+  background: #491734;
+  border: none;
+  width: 180px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #dcc1d5;
+}
+
+.divbotonAgregar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.botonFinalizar {
+  background: #491734;
+  border: none;
+  width: 180px;
+  height: 50px;
+  padding-top: 12px;
+  border-radius: 5px;
+  color: #dcc1d5;
+}
+
+.botonVaciar {
+  background: #dcc1d5;
+  border: none;
+  width: 180px;
+  height: 50px;
+  padding-top: 12px;
+  border-radius: 5px;
+}
+.contenedorCopy{
+  display: flex;
+  justify-content: center;
+  
+}
+.textoCopyRigth{
+  font-size: 12px;
+  text-align: center;
+}
+#footer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.divFooter1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  width: 90%;
+}
+.divFooter2{
+  width: 90%;
+}
