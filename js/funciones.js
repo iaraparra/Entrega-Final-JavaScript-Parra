@@ -6,7 +6,6 @@ function obtenerProductosCarrito(){
     localStorage.setItem("carrito", JSON.stringify(productos));
   }
 
-
   function actualizarBotonCarrito(){
     let productos = obtenerProductosCarrito();
     let contenido = `<button type="button" class="btn btn position-relative">
