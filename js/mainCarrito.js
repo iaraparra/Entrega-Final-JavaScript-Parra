@@ -9,17 +9,6 @@ function compraExitosa() {
   })
 }
 
-/* function borrar(idABorrar) {
-  let child;
-  let container = document.getElementById(idABorrar);
-  while ((child = container.firstChild)) {
-    container.removeChild(child);
-  }
-}
-function borrar(elemento) {
-  removeItem(elemento);
-} */
-
 function Pago(e) {
 
   let contenedorPrincipal = document.createElement("div");
@@ -66,26 +55,9 @@ function Pago(e) {
   botonFinalizar.className = "botonFinalizarCompra";
   botonFinalizar.textContent = "Finalizar Compra"
 
-  /* botonFinalizar.onclick = function (){
-    compraExitosa(vaciarCarrito()).onclick = function (){
-      let aIndex = document.createElement("a");
-      aIndex.href = "index.html";
-
-      botonFinalizar.appendChild(aIndex);
-    };
-    
-  } */
-
   botonFinalizar.onclick = function () {
-    let aIndex = document.createElement("a");
-    aIndex.href = "index.html";
-
-    botonFinalizar.appendChild(aIndex);
     compraExitosa(vaciarCarrito());
   }
-
-
-
 
   divBoton.appendChild(botonFinalizar);
 
