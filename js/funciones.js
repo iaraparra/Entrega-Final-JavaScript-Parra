@@ -9,7 +9,7 @@ function obtenerProductosCarrito(){
   function actualizarBotonCarrito(){
     let productos = obtenerProductosCarrito();
     let contenido = `<button type="button" class="btn btn position-relative">
-    <img src="./assets/imagenes/carro.png" width="24"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span></button>`;
+    <img src="../assets/imagenes/carro.png" width="24"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span></button>`;
     let total = 0;
 
     if (productos.length > 0){
