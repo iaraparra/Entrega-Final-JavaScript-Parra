@@ -122,8 +122,6 @@ function renderProductosCarrito() {
     contenido += `</table>`;
   }
 
-
-
   document.getElementById("productos_carrito").innerHTML = contenido;
 }
 
