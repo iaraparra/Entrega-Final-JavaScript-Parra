@@ -18,7 +18,7 @@ function obtenerProductosCarrito(){
       }
 
       contenido = `<button type="button" class="btn btn position-relative">
-    <img src= "assets/imagenes/delete.png" width="24"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">${total}</span></button>`;
+    <img src= "assets/imagenes/carro.png" width="24"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">${total}</span></button>`;
     }
 
     document.getElementById("boton_carrito").innerHTML = contenido;
